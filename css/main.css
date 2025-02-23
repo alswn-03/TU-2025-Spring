@@ -1,14 +1,28 @@
-.alert-box {
-    background-color: skyblue;
-    padding: 20px;
-    color: black;
-    border-radius: 5px;
-    display: none;
+.navbar {
+    display: flex;
+    align-items: center;  /* 수직(상하) 중앙 정렬 */
+    justify-content: space-between; /* 요소들을 좌우 끝으로 배치 */
+    padding: 0px; /* 위아래 10px, 좌우 20px 여백 */
+    background-color: #A92717;
+    color: white;
+}
+
+.navbar-title {
+    display: flex;
+    align-items: center; /* 내부 요소들(이미지, 텍스트) 수직 중앙 정렬 */
+    margin-left: 25px; /* 왼쪽에서 30px 간격 */
+}
+.navbar-title img {
+    height: 50px; /* 로고 크기 조절 */
+}
+
+.navbar-toggler {
+    margin-right: 7px; /* 오른쪽 버튼 간격 */
 }
 
 .list-group {
-    display: none
+    display: none;
 }
 .show {
-    display: block
+    display: block;
 }
