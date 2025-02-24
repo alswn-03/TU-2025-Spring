@@ -11,34 +11,46 @@
 
   <body>
 
+    <header>
+      <span class="header-title">
+        <img src="/images/turami.png" id="turami-logo">
+        <!-- <span>ABOUT</span> -->
+      </span>
+      <button class="navbar-toggler" type="button">
+        <img src="/images/hamburger.png" id="ham-icon"></img>
+      </button>
+    </header> 
+
     <nav class="navbar">
-          <span class="navbar-title">
-            <img src="/images/turami.png" id="turami-logo">
-            <!-- <span id="text-title">ABOUT</span> -->
-          </span>
+      <div class="nav-container">
           <button class="navbar-toggler" type="button">
-            <img src="/images/hamburger.png" id="navbar-icon"></img>
-            <!-- <img src="/images/X_menu.png" id="navbar-icon"></img> -->
+            <img src="/images/X_menu.png" id="x-icon"></img>
           </button>
-    </nav> 
+          <a href="about.html" class="nav-item">ABOUT</a>
+          <a href="setlist.html" class="nav-item">SETLIST</a>
+          <a href="members.html" class="nav-item">MEMBERS</a>
+          <a href="ticket.html" class="nav-item">TICKET</a>
+      </div> 
+    </nav>
 
-    <ul class="list-group">
-        <li class="list-group-item">ABOUT</li>
-        <li class="list-group-item">SETLIST</li>
-        <li class="list-group-item">MEMBERS</li>
-        <li class="list-group-item">TICKET</li>
-    </ul> 
+    <main>
 
+    </main>
+
+
+
+    <img src="/images/poster.jpg" id="poster">
     <footer>
       <p>Copyright(c) 2025 TURAMI, Hongik University. ALL RIGHTS RESERVED.</p>
     </footer>
 
     <script>
-        document.getElementsByClassName('navbar-toggler')
-        [0].addEventListener('click', function(){ // class="navbar-toggle" 버튼을 클릭하면
-            // 여기 코드를 실행해줘
-            document.getElementsByClassName('list-group')[0].classList.toggle('show') // 원하는 요소에 'show' 클래스명 추가
-        })
+        document.querySelectorAll('.navbar-toggler').forEach(button => {
+          button.addEventListener('click', function() {
+              document.getElementsByClassName('navbar')[0].classList.toggle('show');
+          });
+        });
+        
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

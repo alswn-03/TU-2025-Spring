@@ -1,26 +1,105 @@
-.navbar {
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+
+
+body { /* abhaya-libre-extrabold */
+    font-family: "Abhaya Libre", serif;
+    /* font-weight: 800;
+    font-style: normal; */
+    background: #FDFBD4;
+}
+#poster {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#blur-poster {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(7.5px);
+}
+
+/* header */
+header {
     display: flex;
     height: 60px;
     align-items: center;  /* 수직(상하) 중앙 정렬 */
     padding: 0px; 
     background-color: #A92717;
+    justify-content: space-between;
+    
 }
-
-.navbar-title {
+.header-title {
     display: flex;
     align-items: center; /* 내부 요소들(이미지, 텍스트) 수직 중앙 정렬 */
     margin-left: 22px; /* 왼쪽에서 30px 간격 */
+
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #FDFBD4;
 }
-.navbar-title img {
+.header-title img {
     height: 54px; /* 로고 크기 조절 */
 }
-
 .navbar-toggler {
+    padding: 0px;
     margin-right: 16px; /* 오른쪽 버튼 간격 */
 }
-#navbar-icon {
-    height: 24px; /* X_menu 32px */
+#ham-icon {
+    height: 24px; 
 }
+
+
+/* navbar */
+.navbar {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.5);
+    flex-direction: row-reverse;
+    display: none;
+}
+#x-icon {
+    position: absolute;
+    right: 16px;
+    top: 14px;
+    height: 32px;
+}
+.show {
+    display: flex;
+}
+.nav-container {
+    width: 217px;
+    padding: 0px 0px 0px 33px; /* 윗쪽, 오른쪽, 아래쪽, 왼쪽 */
+    height: 100vh;
+    background-color: #A92717;
+    display: block;
+}
+.nav-item {
+    color: #FDFBD4;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+main {
+    position: absolute;
+    top: 60px;
+    bottom: 50px;
+    width: 100vw;
+
+
+}
+
 
 footer {
     display: flex;              
@@ -39,12 +118,3 @@ footer > p {
 }
 
 
-
-
-
-.list-group {
-    display: none;
-}
-.show {
-    display: block;
-}
