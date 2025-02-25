@@ -35,7 +35,7 @@ header {
 .header-title {
     display: flex;
     align-items: center; /* 내부 요소들(이미지, 텍스트) 수직 중앙 정렬 */
-    margin-left: 22px; /* 왼쪽에서 30px 간격 */
+    margin-left: 23px; /* 왼쪽에서 30px 간격 */
 
     font-size: 30px;
     font-style: normal;
@@ -88,6 +88,7 @@ header {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    text-decoration: none; /* 밑줄 X */
 }
 
 main {
