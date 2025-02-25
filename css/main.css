@@ -11,14 +11,15 @@ body { /* abhaya-libre-extrabold */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) translateY(5px);
 }
 #blur-poster {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) translateY(5px);
     filter: blur(7.5px);
+    width: 375px;
 }
 
 /* header */
