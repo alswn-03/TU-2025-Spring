@@ -73,9 +73,7 @@ header {
     top: 14px;
     height: 32px;
 }
-.show {
-    display: flex;
-}
+
 .nav-container {
     width: 217px;
     padding: 0px 0px 0px 33px; /* 윗쪽, 오른쪽, 아래쪽, 왼쪽 */

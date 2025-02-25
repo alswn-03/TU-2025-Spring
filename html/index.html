@@ -23,9 +23,7 @@
 
     <nav class="navbar">
       <div class="nav-container">
-          <button class="navbar-toggler" type="button">
-            <img src="/images/X_menu.png" id="x-icon"></img>
-          </button>
+          <img onclick="document.getElementByClassName('navbar').style.display='none';" src="/images/X_menu.png" id="x-icon">
           <a href="about.html" class="nav-item">ABOUT</a>
           <a href="setlist.html" class="nav-item">SETLIST</a>
           <a href="members.html" class="nav-item">MEMBERS</a>
@@ -45,11 +43,12 @@
     </footer>
 
     <script>
-        document.querySelectorAll('.navbar-toggler').forEach(button => {
-          button.addEventListener('click', function() {
-              document.getElementsByClassName('navbar')[0].classList.toggle('show');
-          });
-        });
+        document.getElementsByClassName('navbar-toggler')
+        [0].addEventListener('click', function(){ // class="navbar-toggle" 버튼을 클릭하면
+            // 여기 코드를 실행해줘
+          console.log("Pressed")
+          document.getElementsByClassName('navbar')[0].style.display='flex';
+        })
         
     </script>
 
